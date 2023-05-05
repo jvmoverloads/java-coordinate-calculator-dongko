@@ -1,3 +1,5 @@
+package com.dongko.coordiate;
+
 import com.dongko.coordiate.CoordinateCalculator;
 
 public class Main {
