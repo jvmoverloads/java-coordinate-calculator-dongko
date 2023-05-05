@@ -1,8 +1,9 @@
-package com.dongko.coordiate;
+package com.dongko.coordiate.domain;
 
 import com.dongko.coordiate.domain.Point;
 import com.dongko.coordiate.domain.exception.IllegalPointException;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -19,5 +20,10 @@ class PointTest {
         assertThrows(IllegalPointException.class, () ->
             new Point(x, y)
         );
+    }
+
+    @Test
+    void 객체비교테스트() {
+        assertEquals(new Point(1,2), new Point(1,2));
     }
 }
